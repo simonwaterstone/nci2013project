@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>My Page - JavaScript</title>
+
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if IE ]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<!-- Your styles -->
+	<link rel="stylesheet" href="css/styles.css" type="text/css" media="screen" />
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+	<!-- my scripts-->
+	<script type="text/javascript" src="js/scripts.js"></script>
+	
+	<!-- age calculator -->
+
+
+</head>
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="twelvecol">
+			<img src="image/hero-index.jpg" alt="Hero Image" />
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="twelvecol">
+			<div id='cssmenu'>
+				<ul>
+				   <li class='active'><a href='index.html'><span>Home</span></a></li>
+				   <li class='has-sub'><a href='#'><span>Navigation</span></a>
+					  <ul>
+						 <li><a href='photos.html'><span>Photos</span></a></li>
+						 <li><a href='javascript.html'><span>JavaScript</span></a></li>
+						 <li class='last'><a href='tables-forms.html'><span>Tables and Forms</span></a></li>
+					  </ul>
+				   </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<br />
+<div class="container">
+	<div class="row">
+		<div class="fourcol">
+			<a href='photos.html'><img src="image/LeftNav.jpg" alt="Photos" /></a>
+			<p>
+				Some photos of my kids
+			</p>
+		</div>
+		<div class="fourcol">
+			<a href='javascript.html'><img src="image/CentreNav.png" alt="Page 2" /></a>
+			<p>JavaScript</p>
+		</div>
+		<div class="fourcol last">
+			
+			<a href='tables-forms.html'><img src="image/RightNav.jpg" alt="Page 3" /></a>
+			<p>Tables and Forms</p>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="onecol">
+		</div>
+		<div class="tencol">
+			<p id="changebg">
+				<b>Some fun with JavaScript</b>
+				<br />
+				<br />
+				You can use JavaScript to change CSS styles
+				Click buttons to change background and text colours.
+				<br />
+				<br />
+				<button onclick="whiteBlack()"type="button">Black text on White background</button>
+				<button onclick="blackWhite()"type="button">White text on Black background</button>
+				<br />
+				<br />
+				Here, JavaScript reads the current time and provides a response depending on the time of day
+				<br />
+				<br />
+				<button onclick="timeAnswer()">Say hello to the page!</button>
+				<br />
+				<br />
+				You can use Javascript to perform calculations based on input. Input the radius of a sphere below and the volume will be calculated.
+				<br/>
+				I have used the isNaN and parseInt functions to validate input. Enter a letter or a string starting with a number like 3FTSsa to see
+				<br />
+				this in action.
+				<br />
+				<br />
+				<input id="radiusInput" type="text" />
+				<button onclick="sphereVolume()"type="button">Calculate</button>
+				<br />
+				<br />
+			</p>
+		</div>
+		<div class="onecol last">
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="twelvecol">
+			<p>Simon Waterstone	HDSSDSP1 Intro to Web Design</p>
+		</div>
+	</div>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+<script src="js/backstretch.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$.backstretch("image/P1020298.JPG");
+</script>
+</body>
+</html>
